@@ -1,9 +1,8 @@
-#The InfoSec Mentors Project 
-###(going Open Source on 03/09/2017)
+###The InfoSec Mentors Project - Open Source on 03/09/2017
 Building a community for those that both seek out and provide mentorship in
 Information Security.
 
-##Mission Statement:
+###Mission Statement:
 It is the mission of the InfoSec Mentors Project to provide a platform through
 which individuals might more easily obtain, and provide, mentorship within the
 Information Security community. Our goal is to help connect those seeking to
