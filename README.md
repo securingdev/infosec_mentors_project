@@ -1,5 +1,5 @@
 ###The InfoSec Mentors Project - going Open Source on 03/09/2017
-Building a community for those that both seek out and provide mentorship in
+Building a community for those that both seek and wish to provide mentorship in
 Information Security.
 
 ###Mission Statement:
