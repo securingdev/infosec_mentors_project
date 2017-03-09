@@ -70,6 +70,3 @@ From the root of the project folder:
     infosec-mentor-project$ 
     
 Open a web browser and point it to http://localhost:8000
-     
-    
-    
