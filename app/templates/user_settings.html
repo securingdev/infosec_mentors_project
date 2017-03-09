@@ -1,0 +1,90 @@
+{% extends "profile.html" %}
+{% from "form_macros.html" import render_field %}
+
+{% block content %}
+<br/>
+
+    <form action="" method="post">
+    {{ form.hidden_tag() }}
+
+    <div id="connect">
+        <section>
+            {% if teacher %}
+                <b>Mentor:</b>
+                <a href="https://infosecmentors.net/user/{{ teacher_id }}" target="_blank">{{ teacher }}</a>
+                <input type="submit" name="submit" value="Remove Mentor"><br/>
+            {% endif %}
+            {% if student %}
+                <b>Apprentice:</b>
+                <a href="https://infosecmentors.net/user/{{ student_id }}" target="_blank">{{ student }}</a>
+                <input type="submit" name="submit" value="Remove Apprentice"><br/>
+            {% endif %}
+        </section>
+    {% if teacher or student %}
+        <br/>
+        <br/>
+    {% endif %}
+    </div>
+
+    <div id="preferences">
+    <fieldset>
+        <legend>Publicly Displayed Information</legend>
+        <b><a href="https://en.gravatar.com" target="_blank">Gravatar</a>
+            Email Address (for profile picture):{{ render_field(form.gravatar, size=25) }}</b>
+        <b>{{ render_field(form.alias, size=25) }}</b>
+        <b>{{ render_field(form.timezone, size=1) }}</b>
+        <b>{{ render_field(form.public_email, size=25) }}</b>
+        <b>{{ render_field(form.twitter, size=25) }}</b>
+        <b>{{ render_field(form.github, size=25) }}</b>
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+        <legend>Mentorship Preferences (Required)</legend>
+        <b>{{ render_field(form.experience, size=1) }}</b>
+        <b>{{ render_field(form.mentoring_experience, size=1) }}</b>
+        <b>{{ render_field(form.mentored_experience, size=1) }}</b>
+        <b>{{ render_field(form.contact_preference, size=1) }}</b>
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+        <legend>Current Skill Set (Required)</legend>
+        <b>I am able to mentor others in:<br/><br/>
+            #1 {{ render_field(form.mentoring_skill_0, size=1) }}
+            #2 {{ render_field(form.mentoring_skill_1, size=1) }}
+            #3 {{ render_field(form.mentoring_skill_2, size=1) }}</b>
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+        <legend>Desired Skill Set (Required)</legend>
+        <b>I am looking to receive Mentorship in:<br/><br/>
+            #1 {{ render_field(form.mentored_skill_0, size=1) }}
+            #2 {{ render_field(form.mentored_skill_1, size=1) }}
+            #3 {{ render_field(form.mentored_skill_2, size=1) }}</b>
+    </fieldset>
+
+    <br/>
+
+    <fieldset>
+        <legend>Availability</legend>
+        {{ render_field(form.mentoring_hours, size=1) }}
+        {{ render_field(form.mentoring_timeframe, size=1) }}<br/>
+        {{ render_field(form.mentored_hours, size=1) }}
+        {{ render_field(form.mentored_timeframe, size=1) }}<br/>
+    </fieldset>
+
+    <br/>
+        <section style="text-align:center">
+            <input type="submit" name="submit" value="Submit"> <br/><br/>
+            <input type="submit" name="submit" value="Delete Profile">
+        </section>
+
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,127 @@
+{% extends "profile.html" %}
+{% from "form_macros.html" import render_field %}
+
+{% block content %}
+<!-- Body of the page -->
+    <!-- Public Information -->
+    <div id="public">
+    <p>
+        {% if gravatar != "d41d8cd98f00b204e9800998ecf8427e" %}
+        <img id="profile_picture"
+             src="https://www.gravatar.com/avatar/{{ gravatar }}?s=200"
+             alt="profile picture" height=200 width=200 /> <br/>
+        {% else %}
+            <img id="profile_picture"
+                 src="{{ url_for('static', filename='img/profile.png') }}"
+                 alt="profile picture" height=200 width=200 /> <br/>
+        {%  endif %}
+        <br/>
+
+        {{ alias }} <br/>
+        {{ experience }} <br/>
+
+        {% if biography %}
+            {{ biography }}<br/>
+        {% else %}
+            <br/>
+        {% endif %}
+
+        {% if current_user.is_authenticated %}
+            {% if public_email %}
+                <a href="mailto:{{ public_email }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/email.png') }}"
+                         alt="email" title="{{ public_email }}"
+                         height=48 width=48 /></a>
+            {% endif %}
+
+            {% if twitter %}
+                <a href="https://www.twitter.com/{{ twitter }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/twitter.png') }}"
+                         alt="twitter" title="https://www.twitter.com/{{ twitter }}"
+                         height=48 width=48 /></a>
+            {% endif %}
+
+            {% if github %}
+                <a href="https://www.github.com/{{ github }}" target="_blank">
+                    <img src="{{ url_for('static', filename='img/github.png') }}"
+                         alt="github" title="https://www.github.com/{{ github }}"
+                         height=48 width=48 /></a>
+            {% endif %}
+            {% if not github and not twitter and not public_email%}
+                <br/>
+                <br/>
+                <br/>
+            {% endif %}
+        {% endif %}
+
+    </p>
+    </div>
+
+
+    <div id="contributing">
+    <p>
+        Willing to provide mentorship for <strong>{{ mentoring_hours}}</strong>
+        hour(s) per <strong>{{ mentoring_timeframe }}</strong> on the following subjects:
+        <ul>
+            <li>{{ mentoring_skill_0 }}</li>
+            <li>{{ mentoring_skill_1 }}</li>
+            <li>{{ mentoring_skill_2 }}</li>
+        </ul>
+    </p>
+    </div>
+
+
+    <div id="receiving">
+    <p>
+    Seeking mentorship for <strong>{{ mentored_hours }}</strong>
+    hour(s) per <strong>{{ mentored_timeframe }}</strong> on the following subjects:
+    <ul>
+        <li>{{ mentored_skill_0 }}</li>
+        <li>{{ mentored_skill_1 }}</li>
+        <li>{{ mentored_skill_2 }}</li>
+    </ul>
+    </p>
+    </div>
+
+
+    <!-- Method of Contact -->
+    <div id="connect">
+    <p>
+
+
+    {% if current_user.is_authenticated %}
+        Time Zone: <strong>{{ timezone }}</strong><br/>
+        Preferred method for meetings: <strong>{{ contact_preference }}</strong>
+        <br/><br/>
+        {% if availability is equalto 1 %}
+            <b>Mentoring Status:</b>
+            <span style="color:green"><b>Available</b></span>
+            to provide Mentorship<br/>
+
+            {% if not mentored %}
+                <form action="" method="post">
+                    <input type="submit" name="submit" value="Syn (establish connection)" />
+                </form>
+            {% endif %}
+
+        {% else %}
+            <b>Mentoring Status:</b>
+            <span style="color:red"><b>Unavailable</b></span>
+            for Mentorship<br/>
+        {% endif %}
+    {% endif %}
+
+    <br/>
+    <form action="" method="post">
+        <input type="submit" name="submit" value="prev">
+        {% if current_user.is_authenticated %}
+            <input type="submit" name="submit" value="suggest">
+        {% endif %}
+        <input type="submit" name="submit" value="next">
+    </form>
+    </p>
+
+    <br/>
+    </div>
+
+{% endblock %}

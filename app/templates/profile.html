@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head of the page -->
+<head>  
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>
+        InfoSec Mentor Project
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<!-- Body of the page -->
+<body>
+    <div id="nav">
+        <section id="nav_options">
+            <a href="{{ url_for('main.about') }}">About</a>
+            <a href="{{ url_for('main.user_profile', id=1) }}">Browse</a></li>
+            {%  if current_user.is_authenticated %}
+                <a href="{{ url_for('main.user_settings') }}">Settings</a>
+                <a href="{{ url_for('main.logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_for('main.register') }}">Register</a></li>
+                <a href="{{ url_for('main.login') }}">Login</a>
+            {% endif %}
+        </section>
+    </div><br/><br/>
+
+    {% block content %}
+    {% endblock %}
+    <br/><br/>
+
+    <div id="connect">
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}<br/>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+    </div>
+
+
+</body>
+
+</html>

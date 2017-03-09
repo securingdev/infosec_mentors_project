@@ -1,0 +1,24 @@
+{% extends "profile.html" %}
+{% from "form_macros.html" import render_field %}
+
+<br/>
+{% block content %}
+    <section id="login">
+    <section style="text-align:center"><h1>Please fill out the following items</h1></section>
+    <form action="" method="post">
+       {{  form.hidden_tag() }}
+        <table>
+            {{ render_field(form.email_address, size=25) }}
+            {{ render_field(form.password, size=25) }}
+            {{ render_field(form.repeated_password, size=25) }}
+            {{ render_field(form.submit) }}
+        </table>
+    </form>
+    </section>
+
+    <section style="text-align:center; font-size:10px">
+        <b>By registering for this site you agree <br/>
+            to adhere to the <a href="https://infosecmentors.net/tos" target="_blank">Terms of Service</a></b>
+    </section>
+
+{% endblock %}

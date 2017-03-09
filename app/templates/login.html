@@ -1,0 +1,26 @@
+{% extends "profile.html" %}
+{% from "form_macros.html" import render_field %}
+
+<br/>
+{% block content %}
+    <section id="login">
+    <section style="text-align:center"><h1>Please Login</h1></section>
+    <form action="" method="post">
+       {{  form.hidden_tag() }}
+        <table>
+            {{ render_field(form.email_address, size=30) }}
+            {{ render_field(form.password, size=30) }}
+            {{ render_field(form.set_cookie) }}
+        </table>
+        <div id="connect">
+            <input type="submit" name="submit" value="Submit"><br/><br/>
+            <input type="submit" name="submit" value="Forgot Password?"><br/><br/
+        </div>
+    </form>
+    </section>
+    <section style="text-align:center; font-size:10px">
+        <b>By logging in you agree to adhere to<br/>
+        this site's <a href="https://infosecmentors.net/tos" target="_blank">Terms of Service</a></b>
+    </section>
+
+{% endblock %}

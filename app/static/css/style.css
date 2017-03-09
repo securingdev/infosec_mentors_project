@@ -1,0 +1,63 @@
+body {
+    font-family: Arial;
+    Verdana;
+    sans-serif;
+    font-size: 11pt;
+}
+
+a:link { color: #0000EE }
+a:visited { color: #0000EE }
+
+#nav{
+    width: 100%;
+    height: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    background-color: #efefef;
+    z-index: 10;
+    }
+
+#nav_options{
+    width: 100%;
+    word-spacing: 30px;
+    background-color: #efefef;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+}
+
+#connect {
+    text-align: center;}
+
+#contributing, #receiving, #register, #login, #about {
+    line-height: 1.4em;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;}
+
+#profile {
+    padding: 20px; }
+
+#profile_picture {
+    border-radius: 20px; }
+
+#public {
+    text-align: center;}
+
+#save {
+    line-height: 1.4em;
+    text-align: center; }
+
+fieldset {
+    padding:15px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width:320px; }
+
+div#save {
+    line-height: 1.4em;
+    text-align: center; }
+
