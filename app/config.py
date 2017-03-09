@@ -12,7 +12,6 @@ class BaseConfig:
     # Base configuration
     SECRET_KEY = os.environ.get('APP_SECRET_KEY')
     PASSWORD_SALT = os.environ.get('APP_PASSWORD_SALT')
-    REGISTRATION_CODE = os.environ.get('APP_REG_CODE')
     DEBUG = False
     BCRYPT_LOG_ROUNDS = 13
     WTF_CSRF_ENABLED = True
