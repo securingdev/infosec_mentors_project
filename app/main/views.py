@@ -818,3 +818,11 @@ def confirm_mentorship(token):
         return render_template('thank_you.html')
     else:
         return redirect(url_for('main.index'))
+
+# ------------------------------------------------------------------------------
+# Decline Mentorship
+# ------------------------------------------------------------------------------
+@main.route('/decline/<token>')
+@login_required
+def decline_mentorship(token):
+    return True #TODO: Stub
