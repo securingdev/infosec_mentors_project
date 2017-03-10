@@ -831,7 +831,7 @@ def decline_mentorship(token):
     if user:
         #TODO: Consider generating a separate email for decline vs. remove apprentice
         remove_apprentice(user.id)
-        return render_template('declined.html')
+        return render_template('declined.html') #TODO: Build declined template
 
     #TODO: Better redirect logic here
     return redirect(url_for('main.index'))
