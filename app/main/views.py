@@ -822,7 +822,15 @@ def confirm_mentorship(token):
 # ------------------------------------------------------------------------------
 # Decline Mentorship
 # ------------------------------------------------------------------------------
-@main.route('/decline/<token>')
+@main.route('/decline')
 @login_required
 def decline_mentorship(token):
-    return True #TODO: Stub
+
+    user = User.query.filter_by(id = current_user.id).first()
+
+    if user:
+        remove_apprentice(user.id)
+
+    #TODO: Better redirect logic here
+    return redirect(url_for('main.index'))
+
