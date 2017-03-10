@@ -829,7 +829,9 @@ def decline_mentorship(token):
     user = User.query.filter_by(id = current_user.id).first()
 
     if user:
+        #TODO: Consider generating a separate email for decline vs. remove apprentice
         remove_apprentice(user.id)
+        return render_template('declined.html')
 
     #TODO: Better redirect logic here
     return redirect(url_for('main.index'))
