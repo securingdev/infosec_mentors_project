@@ -48,7 +48,7 @@ skills = [ ('blank', ''),
           ('Malware Analysis', 'Malware Analysis'),
           ('Network Security', 'Network Security'),
           ('Packet Analysis', 'Packet Analysis'),
-          ('Penetration Testing', 'Penetration Testing')
+          ('Penetration Testing', 'Penetration Testing'),
           ('Program Management', 'Program Management'),
           ('Project Management', 'Project Management'),
           ('Reverse Engineering', 'Reverse Engineering'),
