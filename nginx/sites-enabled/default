@@ -1,0 +1,30 @@
+server {
+    listen 80;
+    server_name http://infosecmentors.net;
+    return 301 https://infosecmentors.net$request_uri;
+}
+
+server {
+    listen 80;
+    server_name www.infosecmentors.net;
+    return 301 https://infosecmentors.net$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name infosecmentors.net;
+    
+    ssl on;
+    ssl_protocols TLSv1.1 TLSv1.2;
+    ssl_certificate /etc/letsencrypt/live/cert_folder/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/cert_folder/privkey.pem;
+
+    server_tokens off;
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains";
+
+    location / { try_files $uri @infosec_mentor_project; }
+    location @infosec_mentor_project {
+        include 	/etc/nginx/uwsgi_params;
+	    uwsgi_pass	127.0.0.1:8080;
+    }
+}
