@@ -40,10 +40,11 @@ timezone = [('blank', ''),
             ('CET', 'Centraul Europe (UTC +01:00)')]
 
 skills = [ ('blank', ''),
-          ('Business Enablement', 'Business Enablement').
+          ('Business Enablement', 'Business Enablement'),
           ('Career Development', 'Career Development'),
           ('Incident Response', 'Incident Response'),
           ('Intrusion Detection', 'Intrusion Detection'),
+          ('Linux Administrator', 'Linux Administrator'),
           ('Malware Analysis', 'Malware Analysis'),
           ('Network Security', 'Network Security'),
           ('Packet Analysis', 'Packet Analysis'),
@@ -65,6 +66,7 @@ skills = [ ('blank', ''),
           ('Training', 'Training'),
           ('Volunteering', 'Volunteering'),
           ('Web Application Security', 'Web Application Security'),
+          ('Windows Administrator', 'Windows Administrator'),
           ('Wireless Security', 'Wireless Security')]
 
 availability = [ ('1','1'),
