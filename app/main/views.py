@@ -824,7 +824,7 @@ def confirm_mentorship(token):
 # ------------------------------------------------------------------------------
 @main.route('/decline')
 @login_required
-def decline_mentorship(token):
+def decline_mentorship():
 
     user = User.query.filter_by(id = current_user.id).first()
 
