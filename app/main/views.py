@@ -818,3 +818,21 @@ def confirm_mentorship(token):
         return render_template('thank_you.html')
     else:
         return redirect(url_for('main.index'))
+
+# ------------------------------------------------------------------------------
+# Decline Mentorship
+# ------------------------------------------------------------------------------
+@main.route('/decline')
+@login_required
+def decline_mentorship(token):
+
+    user = User.query.filter_by(id = current_user.id).first()
+
+    if user:
+        #TODO: Consider generating a separate email for decline vs. remove apprentice
+        remove_apprentice(user.id)
+        return render_template('declined.html') #TODO: Build declined template
+
+    #TODO: Better redirect logic here
+    return redirect(url_for('main.index'))
+
