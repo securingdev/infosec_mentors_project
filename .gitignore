@@ -6,14 +6,10 @@
 *.swo
 .project
 .idea
-website/token.py
 .vagrant
 run.sh
 settings.sh
 installation.txt
-uwsgi_command.txt
-uwsgi_setup.ini
-nginx_setup.conf
 notes.txt
 
 # python dot-env settings file.
