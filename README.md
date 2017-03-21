@@ -1,8 +1,8 @@
-#The InfoSec Mentors Project
+# The InfoSec Mentors Project
 Building a community for those that both seek out and provide mentorship in
-Information Security.
+Information Security.  Located at [infosecmentors.net](https://infosecmentors.net/).
 
-##Mission Statement:
+## Mission Statement:
 It is the mission of the InfoSec Mentors Project to provide a platform through
 which individuals might more easily obtain, and provide, mentorship within the
 Information Security community. Our goal is to help connect those seeking to
@@ -12,18 +12,18 @@ mentorship when registering to use the platform we have built. It is our sincere
 hope that all those who participate in this community obtain as much wisdom as
 can be found - while also sharing that wisdom with others. 
 
-##Contributing to the Project
+## Contributing to the Project
 
 If you would like to contribute to this project, we ask that you please adhere
 to Vincent Driessen's [Git Branching model](http://nvie.com/posts/a-successful-git-branching-model/), whereby you submit a pull request for your feature branch so that it 
 can be tested before being merged into Development, and then finally into Master.
 
-####Tabs or Spaces?
+#### Tabs or Spaces?
 
 This project uses 4 spaces for indentation; Or as I like to think of it - tabs
 represented as 4 spaces.
 
-####Submitting Feedback
+#### Submitting Feedback
 
 Admittedly, this is my first foray into managing an open source project - so I
 welcome any and all feedback from the community. I have created a project here
@@ -55,7 +55,7 @@ Once the environment variables are updated, you can now initialize the database 
    
 Open a web browser and point it to http://localhost:5000
 
-###Running With Vagrant
+### Running With Vagrant
 
 From the root of the project folder:
     
