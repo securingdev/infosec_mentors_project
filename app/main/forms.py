@@ -40,8 +40,10 @@ timezone = [('blank', ''),
             ('CET', 'Centraul Europe (UTC +01:00)')]
 
 skills = [ ('blank', ''),
+           ('Auditing', 'Auditing'),
            ('Business Enablement', 'Business Enablement'),
            ('Career Development', 'Career Development'),
+           ('Configuration Management', 'Configuration Management'),
            ('Effective Communication', 'Effective Communication'),
            ('Incident Response', 'Incident Response'),
            ('Intrusion Detection', 'Intrusion Detection'),
