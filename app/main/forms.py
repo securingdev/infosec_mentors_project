@@ -25,6 +25,7 @@ contact_preferences = [('blank',''),
                        ('Facetime', 'Facetime'),
                        ('Hangouts', 'Hangouts'),
                        ('Phone', 'Phone'),
+                       ('Riot', 'Riot'),
                        ('Signal', 'Signal'),
                        ('Skype', 'Skype'),
                        ('Slack', 'Slack') ]
