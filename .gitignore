@@ -11,6 +11,7 @@ run.sh
 settings.sh
 installation.txt
 notes.txt
+notes/
 
 # python dot-env settings file.
 # Don't include in commits!
