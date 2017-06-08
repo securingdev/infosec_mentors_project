@@ -43,6 +43,7 @@ timezone = [('blank', ''),
 
 skills = [ ('blank', ''),
            ('Auditing', 'Auditing'),
+           ('Bug Bounty Hunting', 'Bug Bounty Hunting'),
            ('Business Enablement', 'Business Enablement'),
            ('Career Development', 'Career Development'),
            ('Configuration Management', 'Configuration Management'),
