@@ -37,7 +37,7 @@ timezone = [('blank', ''),
             ('AKST', 'Alaskan Time (UTC -9:00)'),
             ('HST', 'Hawaiian Time (UTC -10:00)'),
             ('GMT', 'Greenwhich (UTC +00:00)'),
-            ('CET', 'Centraul Europe (UTC +01:00)')
+            ('CET', 'Centraul Europe (UTC +01:00)'),
             ('IST', 'Indian Standard Time (UTC +05:30)'),
             ('CST', 'China Standard Time (UTC +08:00)')]
 
