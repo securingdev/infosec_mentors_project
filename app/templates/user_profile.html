@@ -27,12 +27,13 @@
         {% endif %}
 
         {% if current_user.is_authenticated %}
+        <!--
             {% if public_email %}
                 <a href="mailto:{{ public_email }}" target="_blank">
                     <img src="{{ url_for('static', filename='img/email.png') }}"
                          alt="email" title="{{ public_email }}"
                          height=48 width=48 /></a>
-            {% endif %}
+            {% endif %} -->
 
             {% if twitter %}
                 <a href="https://www.twitter.com/{{ twitter }}" target="_blank">
