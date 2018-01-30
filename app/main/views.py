@@ -764,7 +764,8 @@ def user_profile(id):
                 requestor_profile = None
 
             if profile is not None:
-                if "@" not in profile.gravatr:
+                user_gravatar = str(profile.gravatar)
+                if "@" not in user_gravatar:
                     return render_template('user_profile.html',
                                         user = current_user,
                                         availability = profile.available,
