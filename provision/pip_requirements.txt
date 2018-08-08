@@ -51,7 +51,7 @@ prettytable==0.7.2
 psycopg2==2.6.2
 pyOpenSSL==0.13
 pycparser==2.17
-pycrypto==2.6.1
+pycrypto==2.6.2
 pycurl==7.19.3
 pygobject==3.12.0
 pyserial==2.6
