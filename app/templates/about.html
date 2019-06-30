@@ -1,66 +1,114 @@
-{% extends "profile.html" %}
+{% extends "profile.html" %} {% block content %}
+<section style="text-align:center">
+  <h1>About the InfoSec Mentors Project:</h1>
+</section>
 
-{% block content %}
-    <section style="text-align:center"><h1>About the InfoSec Mentors Project:</h1></section>
+<section id="about">
+  <p>
+    The InfoSec Mentors Project was developed as a platform to help individuals
+    more easily obtain (and provide) mentorship within the Security Community.
+    If you want to contribute to the project, or start up your own mentorship
+    community, check out our codebase on
+    <a
+      href="https://github.com/andMYhacks/infosec_mentors_project"
+      target="_blank"
+      >Github</a
+    >.
+  </p>
+  <p>
+    This project was inspired by the original "InfoSec Mentors Project", which
+    existed briefly between 2009 and 2012 thanks to the efforts of
+    <a href="https://www.twitter.com/dewzi" target="_blank">Marisa Fagan</a> and
+    <a href="https://www.twitter.com/wimremes" target="_blank">Wim Remes</a>
+    (among others). We thank them for all of their hard work, and for sharing
+    with the community the value of mentorship.
+  </p>
 
-    <section id="about">
-        <p>
-            The InfoSec Mentors Project was developed as a platform to help individuals more easily obtain (and provide) mentorship
-            within the Security Community. If you want to contribute to the project, or start up your own
-            mentorship community, check out our codebase on
-            <a href="https://github.com/andMYhacks/infosec_mentors_project" target="_blank">Github</a>.
-        </p>
-        <p>
-            This project was inspired by the original "InfoSec Mentors Project", which existed briefly between 2009 and 2012 thanks to the efforts of
-            <a href="https://www.twitter.com/dewzi" target="_blank">Marisa Fagan</a> and
-            <a href="https://www.twitter.com/wimremes" target="_blank">Wim Remes</a>
-            (among others). We thank them for all of their hard work, and for sharing with the community the value of mentorship.
-        </p>
+  <section style="text-align:center"><h1>Special Thanks:</h1></section>
+  We would like to extend our thanks to
+  <a href="https://www.twitter.com/jack_daniel" target="_blank">Jack Daniel</a>,
+  Casey Dunham, and
+  <a href="https://www.twitter.com/apolloclark" target="_blank">Apollo Clark</a>
+  for all of their feedback, recommendations, and support throughout the
+  development of this project. <br /><br />
 
-        <section style="text-align:center"><h1>Special Thanks:</h1></section>
-        We would like to extend our thanks to <a href="https://www.twitter.com/jack_daniel" target="_blank">Jack Daniel</a>,
-        Casey Dunham, and
-        <a href="https://www.twitter.com/apolloclark" target="_blank">Apollo Clark</a> for all of their feedback, recommendations,
-        and support throughout the development of this project. <br/><br/>
+  <section style="text-align:center"><h1>About the Co-Founders:</h1></section>
 
+  <div id="public">
+    <img
+      src="{{ url_for('static', filename='img/k_hoodlet.jpg') }}"
+      alt="Jimmy"
+      title="Jimmy Vo"
+      height="200"
+      width="200"
+      style="border-radius:20px"
+    />
+  </div>
+  <section style="text-align:center; font-size:12px;">
+    <b
+      >Keith Hoodlet (
+      <a href="https://www.twitter.com/securingdev" target="_blank"
+        >@securingdev</a
+      >
+      )</b
+    >
+  </section>
+  <br />
+  Keith started on his path toward a career in Information Security in the
+  mid-90’s as a kid playing Blizzard’s popular PC title, “Diablo”. It was at
+  that time he learned how to use Telnet to spoof multiple connections to
+  Blizzard’s online platform, “Battle.net“, using unauthenticated Diablo trial
+  accounts. Needless to say it wasn’t long before he became hooked on text user
+  interfaces and networking protocols. <br /><br />
 
-    <section style="text-align:center"><h1>About the Co-Founders:</h1></section>
+  Keith graduated from Keene State College with a B.A. in Psychology in 2009,
+  and has since attended classes in Computer Science at University of New
+  Hampshire – during which time he also interned at Veracode as a Code Security
+  Engineer. Since then, Keith has worked as an Engineer on the Customer Success
+  team at Rapid7, a Trust & Security Engineer at Bugcrowd, and is now the
+  Manager of DevSecOps at Thermo Fisher Scientific. In his free time Keith
+  designs and builds software solutions as a polyglot developer, and gives both
+  talks and trainings globally on the topics of DevSecOps, Secure Software
+  Development, and Web Application Security.
+  <br />
+  <br />
+  <br />
+  <br />
 
-        <div id="public">
-            <img src="{{ url_for('static', filename='img/k_hoodlet.jpg') }}"
-                 alt="Jimmy" title="Jimmy Vo" height=200 width=200 style="border-radius:20px" />
-        </div>
-        <section style="text-align:center; font-size:12px;"><b>Keith Hoodlet (
-            <a href="https://www.twitter.com/andMYhacks" target="_blank">@andMYhacks</a> )</b></section><br/>
-            Keith started on his path toward a career in Information Security in the mid-90’s as a kid playing Blizzard’s popular PC title, “Diablo”. It was at that time he learned how to use Telnet to spoof multiple connections to Blizzard’s online platform, “Battle.net“, using unauthenticated Diablo trial accounts. Needless to say it wasn’t long before he became hooked on text user interfaces and networking protocols. <br/><br/>
+  <div id="public">
+    <img
+      src="{{ url_for('static', filename='img/jimmy_vo.jpeg') }}"
+      alt="Jimmy"
+      title="Jimmy Vo"
+      height="200"
+      width="200"
+      style="border-radius:20px"
+    />
+  </div>
 
-            Keith graduated from Keene State College with a B.A. in Psychology in 2009, and recently attended classes in Computer Science at University of New Hampshire – during which time he also interned at Veracode as a Code Security Engineer. Since then, Keith has worked as an Engineer on the Customer Success team at Rapid7, and now works as a Trust & Security Engineer at Bugcrowd. In his free time he continues to develop his skills in Web Application Development and Security, and will be co-training the “Offensive Web Hacking” course at DerbyCon 7.0 with his mentor, <a href="https://www.twitter.com/CaseyDunham" target="_blank">Casey Dunham</a>.
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+  <section style="text-align:center" style="font-size=12px">
+    <b
+      >Jimmy Vo (
+      <a href="https://www.twitter.com/JimmyVo" target="_blank">@JimmyVo</a>
+      )</b
+    >
+  </section>
+  <br />
+  In 2009, Jimmy started his InfoSec journey with the help of the original
+  "InfoSec Mentors Project". Through InfoSec Mentors, Jimmy was connected with
+  <a href="https://www.twitter.com/helkhoury" target="_blank">Hadi</a>, who
+  helped him navigate professional life while finishing up his B.S in Computer
+  Information Systems. <br /><br />
 
-       <div id="public">
-       <img src="{{ url_for('static', filename='img/jimmy_vo.jpeg') }}"
-             alt="Jimmy" title="Jimmy Vo" height=200 width=200 style="border-radius:20px" />
-        </div>
+  Jimmy started out in various help desk roles before transitioning into the
+  world of IT Operations. It wasn't long after that he made a full transition
+  into what has become several security roles. He has dabbled in Red and Blue
+  teaming, and currently works at a Fortune 50 financial institution as part of
+  their security team. When he isn't crushing the dreams of threat actors, he's
+  training in Brazilian Jiu Jitsu, lifting weights, and petting dogs.
 
-        <section style="text-align:center" style="font-size=12px"><b>Jimmy Vo (
-            <a href="https://www.twitter.com/JimmyVo" target="_blank">@JimmyVo</a> )</b></section><br/>
-            In 2009, Jimmy started his InfoSec journey with the help of the original "InfoSec Mentors Project".
-            Through InfoSec Mentors, Jimmy was connected with <a href="https://www.twitter.com/helkhoury" target="_blank">Hadi</a>,
-            who helped him navigate professional life while finishing up his B.S in Computer Information Systems. <br/><br/>
-
-            Jimmy started out in various help desk roles before transitioning into the world of IT Operations.
-            It wasn't long after that he made a full transition into what has become several security roles.
-            He has dabbled in Red and Blue teaming, and currently works at a Fortune 50 financial institution as part of
-            their security team. When he isn't crushing the dreams of threat actors, he's training in Brazilian Jiu Jitsu,
-            lifting weights, and petting dogs.
-
-        <br/>
-        <br/>
-    </section>
-
-
+  <br />
+  <br />
+</section>
 
 {% endblock %}
