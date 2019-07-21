@@ -60,7 +60,7 @@ python-debian==0.1.21-nmu2ubuntu2
 python-dotenv==0.6.1
 python-editor==1.0.3
 pytz==2016.10
-requests==2.2.1
+requests==2.20.0
 simplejson==3.3.1
 six==1.10.0
 ssh-import-id==3.21
