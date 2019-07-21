@@ -1,5 +1,5 @@
 Cheetah==2.4.4
-Flask==0.11.1
+Flask==1.0
 Flask-Bcrypt==0.7.1
 Flask-Bootstrap==3.3.7.0
 Flask-Login==0.4.0
