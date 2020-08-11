@@ -1,6 +1,6 @@
-# The InfoSec Mentors Project
+# The InfoSec Mentors Project is RETIRED and is no longer being maintained.
 Building a community for those that both seek out and provide mentorship in
-Information Security.  Located at [infosecmentors.net](https://infosecmentors.net/).
+Information Security.  The site was located at [infosecmentors.net](https://infosecmentors.net/).
 
 ## Mission Statement:
 It is the mission of the InfoSec Mentors Project to provide a platform through
