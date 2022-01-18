@@ -1,4 +1,4 @@
-# The InfoSec Mentors Project is RETIRED and is no longer being maintained.
+# The InfoSec Mentors Project is ARCHIVED and is no longer being maintained.
 Building a community for those that both seek out and provide mentorship in
 Information Security.  The site was located at [infosecmentors.net](https://infosecmentors.net/).
 
