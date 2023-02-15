@@ -20,7 +20,7 @@ Twisted-Core==13.2.0
 Twisted-Names==13.2.0
 Twisted-Web==13.2.0
 WTForms==2.1
-Werkzeug==0.15.3
+Werkzeug==2.2.3
 alembic==0.8.9
 amqp==2.1.4
 apt-xapian-index==0.45
