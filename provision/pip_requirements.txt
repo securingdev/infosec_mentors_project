@@ -28,7 +28,7 @@ argparse==1.2.1
 bcrypt==3.1.1
 billiard==3.5.0.2
 blinker==1.4
-celery==4.0.2
+celery==5.2.2
 cffi==1.9.1
 chardet==2.0.1
 click==6.7
